@@ -1,0 +1,87 @@
+:root {
+  --bg: #18181b;
+  --surface: #26262a;
+  --text: #e4e4e7;
+  --muted: #a1a1aa;
+  --accent: #e5192b;
+  --accent-text: #ff4d5e;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  text-align: left;
+}
+
+h1, h2 { color: var(--accent-text); margin: 0; }
+h1 { font-size: 2.4rem; line-height: 1.1; }
+h2 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+
+.site-header { border-bottom: 2px solid var(--accent); padding: 2rem 1.5rem; }
+
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.subtitle { margin: 0.25rem 0 0; color: var(--muted); font-size: 1.1rem; }
+
+.button {
+  background: var(--accent);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 4px;
+}
+.button:hover { background: #c4101f; }
+
+main { max-width: 1000px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+
+.intro { max-width: 680px; }
+.intro p { margin: 0 0 1rem; }
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.chips { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: 0.6rem; }
+.chips li {
+  background: var(--surface);
+  color: var(--accent-text);
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
+}
+
+.sources { margin-top: 3.5rem; max-width: 680px; }
+.sources p { color: var(--muted); }
+
+details {
+  background: var(--surface);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  margin-top: 0.75rem;
+  padding: 0.8rem 1rem;
+}
+summary { cursor: pointer; color: var(--accent-text); font-weight: bold; }
+details ul { margin: 0.75rem 0 0; padding-left: 1.2rem; }
+
+.site-footer { text-align: left; padding: 2rem 1.5rem; max-width: 1000px; margin: 0 auto; color: var(--muted); }
+
+a:focus-visible, summary:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}

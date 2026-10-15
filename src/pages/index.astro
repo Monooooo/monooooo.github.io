@@ -1,16 +1,87 @@
 ---
 ---
 
-<html lang="en">
+<html lang="nl">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MvdMeer</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
 	<body>
-		<h1>Astro</h1>
+	<header class="site-header">
+		<div class="header-inner">
+		<div>
+			<h1>Menno van der Meer</h1>
+			<p class="subtitle">Junior Software Developer</p>
+		</div>
+		<a class="button" href="mailto:menno.vdmeer06@gmail.com">Neem contact op</a>
+		</div>
+	</header>
+
+	<main>
+		<section class="intro">
+		<!-- Pas deze teksten aan naar jezelf -->
+		<p>Ik ben Menno, beginnende software developer met ervaring in Python, JavaScript en CSS. Ik werk graag samen in teamverband en werk goed onder druk.</p>
+		<p>Ik zit in mijn tweede jaar van de opleiding Software Development in Rotterdam. Ik heb veel passie voor game development en werk graag samen naar een mooi eindproduct.</p>
+		</section>
+
+		<section class="skills">
+		<div class="column">
+			<h2>Technische skills</h2>
+			<p>Ik heb in mijn tijd op school verschillende technische skills geleerd en mijn kennis wordt steeds groter.</p>
+			<ul class="chips">
+			<li>Python</li>
+			<li>JavaScript</li>
+			<li>CSS</li>
+			<li>React</li>
+			<li>SQL</li>
+			</ul>
+		</div>
+		<div class="column">
+			<h2>Soft skills</h2>
+			<ul class="chips">
+			<li>Doorzettingsvermogen</li>
+			<li>Leergierig</li>
+			<li>Communicatief</li>
+			</ul>
+		</div>
+		</section>
+
+		<section class="sources">
+		<h2>Bronnen</h2>
+		<p>Per bron de belangrijkste inzichten. Klik op een bron om hem te openen.</p>
+
+		<details>
+			<summary>Bron 1: Zelfscan</summary>
+			<ul>
+			<li>Inzicht 1</li>
+			<li>Inzicht 2</li>
+			</ul>
+		</details>
+
+		<details>
+			<summary>Bron 2: titel van je bron</summary>
+			<ul>
+			<li>Inzicht 1</li>
+			<li>Inzicht 2</li>
+			</ul>
+		</details>
+
+		<details>
+			<summary>Bron 3: titel van je bron</summary>
+			<ul>
+			<li>Inzicht 1</li>
+			<li>Inzicht 2</li>
+			</ul>
+		</details>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>&copy; <span id="year"></span> Menno van der Meer</p>
+	</footer>
+
+	<script is:inline src="/script.js"></script>
 	</body>
-</html>
+	</html>
